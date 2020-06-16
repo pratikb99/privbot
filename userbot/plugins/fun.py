@@ -85,7 +85,7 @@ INSULT_STRINGS = [
     "`If you’re talking behind my back then you’re in a perfect position to kiss my a**!.`",
 ]
 CHUPSTR = [
-    "`Chup bsdk`",   
+    "`Chup bsdk 😒😒`",   
 ]
 # ===========================================
                           
