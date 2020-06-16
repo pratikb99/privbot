@@ -84,6 +84,9 @@ INSULT_STRINGS = [
     "`You’re so ugly that when you cry, the tears roll down the back of your head…just to avoid your face.`",
     "`If you’re talking behind my back then you’re in a perfect position to kiss my a**!.`",
 ]
+CHUPSTR = [
+    "`Chup bsdk`",   
+]
 # ===========================================
                           
 
@@ -154,4 +157,13 @@ async def _(event):
     bro = random.randint(0, len(GEY_STRINGS) - 1)    
     input_str = event.pattern_match.group(1)
     reply_text = GEY_STRINGS[bro]
+    await event.edit(reply_text) 
+
+@borg.on(admin_cmd(pattern="chupp ?(.*)"))
+async def _(event):
+    if event.fwd_from:
+         return
+    bro = random.randint(0, len(CHUPSTR) - 1)    
+    input_str = event.pattern_match.group(1)
+    reply_text = CHUPSTR[bro]
     await event.edit(reply_text) 
