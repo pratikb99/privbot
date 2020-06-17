@@ -65,7 +65,7 @@ async def _(event):
     async with borg.conversation("@MemeAutobot") as bot_conv:
           try:
             memeVar = event.pattern_match.group(1)
-            await silently_send_message(bot_conv, "/start")
+            await silently_send_message(bot_conv, "/new")
             await asyncio.sleep(1)
             await silently_send_message(bot_conv, memeVar)
             await borg.send_file(chat, reply_message.media)
